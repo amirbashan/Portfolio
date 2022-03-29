@@ -1,9 +1,26 @@
+#navbar {
+  z-index: 10;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+#navbar a {
+  margin: 0 8px;
+}
+#navbar img {
+  height: 40px;
+  margin: 2px;
+}
+
 #welcome {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 30px;
+  margin-bottom: 80px;
 }
 .welcomeHeader1 {
   font-size: 2rem !important;
@@ -11,6 +28,7 @@
 .welcomeHeader2 {
   font-size: 5.5rem !important;
   line-height: 5rem !important;
+  color: #38b2ac;
 }
 .welcomeHeader3 {
   margin-top: 10px;
@@ -20,32 +38,43 @@
 
 .welcomeContainer Button {
   margin: 20px 5px 0 5px;
+  color: #38b2ac !important;
+  border-color: #38b2ac !important;
+  border-radius: 1px;
+}
+.welcomeContainer Button:hover {
+  color: #ffffff !important;
+  background-color: #38b2ac !important;
+}
+
+.emptySpace {
+  height: 100px;
 }
 #about {
   transform: skewY(-4deg);
-  background-color: black;
+  background-image: linear-gradient(to right, #38b2ac, #4fd1c5);
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px;
+  padding: 50px 30px;
 }
 #about > * {
   transform: skewY(+4deg);
 }
 .textContainer {
   margin: 30px auto;
-  width: 50%;
+  width: 52%;
+  font-size: 1.4rem;
 }
-#about p {
-  font-size: 1.2rem;
-}
+
 #projects {
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 30px;
+  margin-top: 50px;
 }
 
 /* tablet view */
@@ -56,10 +85,20 @@
   .welcomeContainer {
     text-align: center;
   }
+  .textContainer {
+    margin: 30px auto;
+    width: 80%;
+    font-size: 1.2rem;
+  }
 }
 /* phone view */
 @media only screen and (max-width: 500px) {
   #welcome {
     padding: 30px;
+  }
+  .textContainer {
+    margin: 30px 20px;
+    width: 100%;
+    font-size: 0.95rem;
   }
 }

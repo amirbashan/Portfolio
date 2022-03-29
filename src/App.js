@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { ChakraProvider } from "@chakra-ui/react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import Navbar from "./Components/Navbar";
 import Welcome from "./Components/Welcome";
 import AboutMe from "./Components/AboutMe";
 import Projects from "./Components/Projects";
@@ -20,10 +21,12 @@ function App() {
   return (
     <ChakraProvider>
       <div>
+        <Navbar />
         <div id="welcome">
           <Welcome handleClickAbout={handleClickAbout} handleClickProjects={handleClickProjects} />
         </div>
-        <div id="about" ref={aboutRef}>
+        <div className="emptySpace" ref={aboutRef}></div>
+        <div id="about">
           <AboutMe />
         </div>
         <div id="projects" ref={projectsRef}>
