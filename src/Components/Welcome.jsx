@@ -6,13 +6,17 @@ export default function Welcome(props) {
   const { handleBackClick } = props;
   return (
     <div className="welcomeContainer">
-      <Heading size="4xl">
-        Hi, my name is <span>Amir Bashan</span>
-      </Heading>
-      <Heading size="4xl">I'm a Full stack developer</Heading>
-      <Button variant="outline-success" size="lg" onClick={handleBackClick}>
-        See more
-      </Button>
+      <Heading className="welcomeHeader1">I'm</Heading>
+      <Heading className="welcomeHeader2">Amir Bashan</Heading>
+      <Heading className="welcomeHeader3">FullStack Developer</Heading>
+      <div>
+        <Button variant="outline-dark" size="lg" onClick={handleBackClick}>
+          About me
+        </Button>
+        <Button variant="outline-dark" size="lg" onClick={handleBackClick}>
+          My Projects
+        </Button>
+      </div>
     </div>
   );
 }
