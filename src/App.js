@@ -29,6 +29,7 @@ function App() {
         <div id="about">
           <AboutMe />
         </div>
+        <div className="emptySpace"></div>
         <div id="projects" ref={projectsRef}>
           <Projects />
         </div>

@@ -2,9 +2,6 @@ import React from "react";
 import resume from "../Img/resume.png";
 import gitIcon from "../Img/github.png";
 import linkedinIcon from "../Img/linkedin.png";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import InsertDriveFileIcon from "@mui/icons-material/InsertDriveFile";
 
 export default function Navbar() {
   return (
