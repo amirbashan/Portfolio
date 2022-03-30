@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Heading } from "@chakra-ui/react";
 import axios from "axios";
-import { FormControl, FormLabel, FormErrorMessage, FormHelperText, Input } from "@chakra-ui/react";
+import { FormControl, FormLabel, Input } from "@chakra-ui/react";
+import Button from "react-bootstrap/Button";
 
 export default function ContactMe() {
   const [name, setName] = useState("");
@@ -54,9 +55,15 @@ export default function ContactMe() {
             }}
             required
           />
-          <button type="submit" onClick={() => submitForm()} className="btn">
+          <Button
+            type="submit"
+            onClick={() => submitForm()}
+            variant="outline-dark"
+            size="lg"
+            disabled={!name || !email || !msgBody}
+          >
             Submit
-          </button>
+          </Button>
         </FormControl>
       </div>
     </>

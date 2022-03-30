@@ -16,6 +16,7 @@ function App() {
   const skillsRef = useRef();
   const projectsRef = useRef();
   const aboutRef = useRef();
+  const contactRef = useRef();
 
   useEffect(() => {
     Aos.init({});
@@ -24,30 +25,36 @@ function App() {
   const ClickSkills = () => skillsRef.current.scrollIntoView({ behavior: "smooth" });
   const ClickAbout = () => aboutRef.current.scrollIntoView({ behavior: "smooth" });
   const ClickProjects = () => projectsRef.current.scrollIntoView({ behavior: "smooth" });
+  const ClickContact = () => contactRef.current.scrollIntoView({ behavior: "smooth" });
 
   return (
     <ChakraProvider>
       <div>
         <Navbar />
         <div id="welcome">
-          <Welcome ClickAbout={ClickAbout} ClickSkills={ClickSkills} ClickProjects={ClickProjects} />
+          <Welcome
+            ClickAbout={ClickAbout}
+            ClickSkills={ClickSkills}
+            ClickProjects={ClickProjects}
+            ClickContact={ClickContact}
+          />
         </div>
-        <div className="emptySpace" ref={skillsRef}></div>
-        <div id="techSkills">
-          <Skills />
+        <div className="emptySpace" ref={aboutRef}></div>
+        <div id="about">
+          <AboutMe />
         </div>
         <div className="emptySpace"></div>
         <div id="projects" ref={projectsRef}>
           <Projects />
         </div>
-        <div className="emptySpace" ref={aboutRef}></div>
-        <div id="about">
-          <AboutMe  />
+        <div className="emptySpace" ref={skillsRef}></div>
+        <div id="techSkills">
+          <Skills />
         </div>
-        <div id="contact">
+        <div id="contact" ref={contactRef}>
           <ContactMe />
         </div>
-        <div id="bottom"></div>
+        <footer>Amir - 0585-009044</footer>
       </div>
     </ChakraProvider>
   );

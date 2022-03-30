@@ -80,13 +80,12 @@
   font-size: 1.4rem;
 }
 #projects {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 30px;
   margin-top: 50px;
-  margin-bottom: 250px;
+  margin-bottom: 100px;
 }
 .projectFrame {
   display: flex;
@@ -138,6 +137,22 @@
   flex-direction: column;
   align-items: center;
   padding: 50px 30px;
+  margin: 100px auto 50px auto;
+}
+#contact Button {
+  margin: 20px 5px 0 0;
+  color: #38b2ac !important;
+  border-color: #38b2ac !important;
+  border-radius: 3px;
+}
+#contact Button:hover {
+  color: #ffffff !important;
+  background-color: #38b2ac !important;
+}
+#contact Button:disabled {
+  color: black !important;
+  border-color: rgb(151, 151, 151) !important;
+  background-color: #dddddd !important;
 }
 #contactForm {
   display: flex;
@@ -191,6 +206,11 @@
   width: 50px;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+}
+
 /* tablet view */
 @media only screen and (max-width: 950px) {
   #welcome {
@@ -224,8 +244,14 @@
   #contact {
     margin-top: 50px;
   }
+  #contactForm {
+    width: 80%;
+  }
   .otherTools {
     width: 150px;
+  }
+  #projects {
+    margin-bottom: 0px;
   }
 }
 /* phone view */
@@ -250,6 +276,9 @@
   }
   #contact {
     margin-top: 50px;
+  }
+  #contactForm {
+    width: 100%;
   }
   .SkillsContainer > * {
     margin-top: 30px;
