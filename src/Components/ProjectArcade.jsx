@@ -5,7 +5,7 @@ import Arcade from "../Img/Arcade.png";
 export default function ProjectArcade() {
   return (
     <div className="projectFrame">
-      <div className="projectInfo">
+      <div data-aos="fade-right" className="projectInfo">
         <Heading size="lg" className="mb-1">
           Old Arcade
         </Heading>
@@ -35,7 +35,7 @@ export default function ProjectArcade() {
           </a>
         </div>
       </div>
-      <div className="projectImg">
+      <div data-aos="fade-left" className="projectImg">
         <img src={Arcade} alt={"Arcade Website"} />
       </div>
     </div>

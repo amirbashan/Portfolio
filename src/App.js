@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { ChakraProvider } from "@chakra-ui/react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
@@ -6,10 +6,16 @@ import Navbar from "./Components/Navbar";
 import Welcome from "./Components/Welcome";
 import AboutMe from "./Components/AboutMe";
 import Projects from "./Components/Projects";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function App() {
   const aboutRef = useRef();
   const projectsRef = useRef();
+
+  useEffect(() => {
+    Aos.init({});
+  }, []);
 
   const handleClickAbout = () => {
     aboutRef.current.scrollIntoView({ behavior: "smooth" });
