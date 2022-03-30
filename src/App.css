@@ -144,6 +144,7 @@
   color: #38b2ac !important;
   border-color: #38b2ac !important;
   border-radius: 3px;
+  width: 150px;
 }
 #contact Button:hover {
   color: #ffffff !important;
@@ -154,13 +155,15 @@
   border-color: rgb(151, 151, 151) !important;
   background-color: #dddddd !important;
 }
-#contactForm {
+#contactForm form {
   display: flex;
-  width: 52%;
+  flex-direction: column;
 }
-#contact input {
+#contact input,
+#contact Textarea {
   border-radius: 3px;
   margin-bottom: 10px;
+  width: 800px;
 }
 #techSkills {
   padding-top: 100px;
@@ -247,6 +250,12 @@ footer {
   #contactForm {
     width: 80%;
   }
+  #contact input,
+  #contact Textarea {
+    border-radius: 3px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
   .otherTools {
     width: 150px;
   }
@@ -278,6 +287,9 @@ footer {
     margin-top: 50px;
   }
   #contactForm {
+    width: 100%;
+  }
+  #contact Button {
     width: 100%;
   }
   .SkillsContainer > * {

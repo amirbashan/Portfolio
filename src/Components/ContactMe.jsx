@@ -1,30 +1,26 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Heading } from "@chakra-ui/react";
-import axios from "axios";
-import { FormControl, FormLabel, Input } from "@chakra-ui/react";
+import emailjs from "emailjs-com";
+import { FormLabel, Input, Textarea } from "@chakra-ui/react";
 import Button from "react-bootstrap/Button";
 
 export default function ContactMe() {
+  const form = useRef();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [msgBody, setMsgBody] = useState("");
 
-  const formId = "FyTV01dM";
-  const formSparkUrl = `https://submit-form.com/${formId}`;
-  const submitForm = async (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    await formSubmission();
-  };
-  const formSubmission = async () => {
-    const payload = {
-      message: "testing 123",
-    };
-    try {
-      const res = await axios.post(formSparkUrl, payload);
-      console.log(res);
-    } catch (error) {
-      console.log(error);
-    }
+    console.log(form.current);
+    emailjs.sendForm("service_oktpcue", "template_5qhux7e", form.current, "HRIUa5IBDOWJUQGfg").then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
   };
 
   return (
@@ -33,13 +29,14 @@ export default function ContactMe() {
         Contact me
       </Heading>
       <div id="contactForm">
-        <FormControl>
+        <form ref={form} onSubmit={sendEmail}>
           <FormLabel htmlFor="Full-name">Full name</FormLabel>
           <Input
             onChange={(e) => {
               setName(e.target.value);
             }}
             required
+            name="user_name"
           />
           <FormLabel htmlFor="Email">Email</FormLabel>
           <Input
@@ -47,24 +44,28 @@ export default function ContactMe() {
               setEmail(e.target.value);
             }}
             required
+            name="user_email"
           />
           <FormLabel htmlFor="Message">Message</FormLabel>
-          <Input
+          <Textarea
             onChange={(e) => {
               setMsgBody(e.target.value);
             }}
             required
+            rows="5"
+            name="message"
           />
           <Button
             type="submit"
-            onClick={() => submitForm()}
+            onClick={(e) => sendEmail(e)}
             variant="outline-dark"
             size="lg"
-            disabled={!name || !email || !msgBody}
+            value="Send"
+            disabled={!name || !email || msgBody}
           >
             Submit
           </Button>
-        </FormControl>
+        </form>
       </div>
     </>
   );
