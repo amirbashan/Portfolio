@@ -42,7 +42,7 @@ function App() {
         </div>
         <div className="emptySpace" ref={aboutRef}></div>
         <div id="about">
-          <AboutMe />
+          <AboutMe  />
         </div>
         <div id="contact">
           <ContactMe />

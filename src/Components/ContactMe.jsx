@@ -31,28 +31,28 @@ export default function ContactMe() {
       <Heading size="2xl" className="mb-3">
         Contact me
       </Heading>
-      <div>
-        <FormControl isRequired>
+      <div id="contactForm">
+        <FormControl>
           <FormLabel htmlFor="Full-name">Full name</FormLabel>
           <Input
-            placeholder="Full name"
             onChange={(e) => {
               setName(e.target.value);
             }}
+            required
           />
           <FormLabel htmlFor="Email">Email</FormLabel>
           <Input
-            placeholder="Email"
             onChange={(e) => {
               setEmail(e.target.value);
             }}
+            required
           />
           <FormLabel htmlFor="Message">Message</FormLabel>
           <Input
-            placeholder="Message"
             onChange={(e) => {
               setMsgBody(e.target.value);
             }}
+            required
           />
           <button type="submit" onClick={() => submitForm()} className="btn">
             Submit

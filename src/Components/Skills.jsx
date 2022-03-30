@@ -21,7 +21,7 @@ export default function Skills() {
     <>
       <Heading size="2xl">SKILLS</Heading>
       <div className="SkillsContainer">
-        <div className="SkillsInner">
+        <div id="skillsFront" className="SkillsInner">
           <Heading size="md">Front-End</Heading>
           <div className="miniSkillsContainer">
             <div className="miniSkill">
@@ -50,7 +50,7 @@ export default function Skills() {
             </div>
           </div>
         </div>
-        <div className="otherTools SkillsInner">
+        <div id="skillsBack" className="otherTools SkillsInner">
           <Heading size="sm">Other-Tools</Heading>
           <div className="miniSkillsContainer">
             <div className="miniSkill">
@@ -67,7 +67,7 @@ export default function Skills() {
             </div>
           </div>
         </div>
-        <div className="SkillsInner">
+        <div id="skillsTools" className="SkillsInner">
           <Heading size="sm">Back-End</Heading>
           <div className="miniSkillsContainer">
             <div className="miniSkill">

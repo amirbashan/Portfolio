@@ -3,8 +3,8 @@ import { Heading } from "@chakra-ui/react";
 
 export default function AboutMe() {
   return (
-    <>
-      <Heading size="2xl" className="">
+    <div data-aos="fade-in" className="aboutContainer">
+      <Heading size="2xl" className="aboutHeader">
         ABOUT ME
       </Heading>
       <div className="textContainer">
@@ -18,6 +18,6 @@ export default function AboutMe() {
           experience in owning a Business, Sales and Project management in Construction.
         </p>
       </div>
-    </>
+    </div>
   );
 }
