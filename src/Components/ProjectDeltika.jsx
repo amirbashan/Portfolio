@@ -1,6 +1,6 @@
 import React from "react";
 import { Heading } from "@chakra-ui/react";
-import Deltika from "../Img/Deltika.png";
+import Deltika from "../Vid/Deltika.mp4";
 
 export default function ProjectDeltika() {
   return (
@@ -26,7 +26,7 @@ export default function ProjectDeltika() {
           </p>
           <p>Site includes complex database queries, dynamic map and more.</p>
           <p className="note">
-            <b>Note:</b> Site it targeted for desktop and not showing well on small screens.
+            <b>Note:</b> Site it targeted for desktop to prioritize speed and not showing well on small screens.
           </p>
         </div>
         <div className="buttonStyle">
@@ -36,7 +36,9 @@ export default function ProjectDeltika() {
         </div>
       </div>
       <div data-aos="fade-left" className="projectImg">
-        <img src={Deltika} alt={"deltika website"} />
+        <video className="video" loop={true} autoPlay={true} muted={true}>
+          <source src={Deltika} type="video/mp4" />
+        </video>
       </div>
     </div>
   );

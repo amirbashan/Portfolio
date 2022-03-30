@@ -3,18 +3,21 @@ import Button from "react-bootstrap/Button";
 import { Heading } from "@chakra-ui/react";
 
 export default function Welcome(props) {
-  const { handleClickAbout, handleClickProjects } = props;
+  const { ClickAbout, ClickProjects, ClickSkills } = props;
   return (
     <div className="welcomeContainer">
       <Heading className="welcomeHeader1">I'm</Heading>
       <Heading className="welcomeHeader2">Amir Bashan</Heading>
       <Heading className="welcomeHeader3">FullStack Developer</Heading>
       <div>
-        <Button variant="outline-dark" size="lg" onClick={handleClickAbout}>
-          About me
+        <Button variant="outline-dark" size="lg" onClick={ClickSkills}>
+          Skills
         </Button>
-        <Button variant="outline-dark" size="lg" onClick={handleClickProjects}>
+        <Button variant="outline-dark" size="lg" onClick={ClickProjects}>
           My Projects
+        </Button>
+        <Button variant="outline-dark" size="lg" onClick={ClickAbout}>
+          About me
         </Button>
       </div>
     </div>

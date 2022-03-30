@@ -50,7 +50,8 @@
 .emptySpace {
   height: 100px;
 }
-#about {
+#about,
+#techSkills {
   transform: skewY(-4deg);
   background-image: linear-gradient(to right, #38b2ac, #4fd1c5);
   color: white;
@@ -59,7 +60,8 @@
   align-items: center;
   padding: 50px 30px;
 }
-#about > * {
+#about > *,
+#techSkills > * {
   transform: skewY(+4deg);
 }
 .textContainer {
@@ -74,6 +76,7 @@
   align-items: center;
   padding: 30px;
   margin-top: 50px;
+  margin-bottom: 250px;
 }
 .projectFrame {
   display: flex;
@@ -120,6 +123,55 @@
   color: grey;
   font-style: italic;
 }
+#contact {
+  margin-top: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 30px;
+}
+#contact form {
+  width: 52%;
+}
+#contact input {
+  /* background-color: #ffffff; */
+  border-radius: 3px;
+}
+#techSkills {
+  min-height: 500px;
+  padding-top: 100px;
+}
+
+.SkillsContainer {
+  display: flex;
+  flex-flow: row wrap;
+}
+.SkillsContainer > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  width: calc(80vw / 3);
+  margin-top: 20px;
+}
+.miniSkillsContainer {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+.miniSkill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.miniSkill img {
+  height: 50px;
+  width: 50px;
+}
+
 /* tablet view */
 @media only screen and (max-width: 950px) {
   #welcome {
@@ -147,6 +199,15 @@
   .note {
     margin-bottom: 10px;
   }
+  #techSkills {
+    padding: 50px;
+  }
+  #contact {
+    margin-top: 400px;
+  }
+  .otherTools {
+    width: 150px;
+  }
 }
 /* phone view */
 @media only screen and (max-width: 500px) {
@@ -164,5 +225,15 @@
   }
   #projects {
     margin-top: 0;
+  }
+  #contact {
+    margin-top: 350px;
+  }
+  .SkillsContainer > * {
+    margin-top: 30px;
+    width: 100%;
+  }
+  .SkillsInner {
+    margin-bottom: 20px;
   }
 }

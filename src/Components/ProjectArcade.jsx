@@ -1,6 +1,6 @@
 import React from "react";
 import { Heading } from "@chakra-ui/react";
-import Arcade from "../Img/Arcade.png";
+import oldArcade from "../Vid/oldArcade.mp4";
 
 export default function ProjectArcade() {
   return (
@@ -36,7 +36,9 @@ export default function ProjectArcade() {
         </div>
       </div>
       <div data-aos="fade-left" className="projectImg">
-        <img src={Arcade} alt={"Arcade Website"} />
+        <video className="video" loop={true} autoPlay={true} muted={true}>
+          <source src={oldArcade} type="video/mp4" />
+        </video>
       </div>
     </div>
   );

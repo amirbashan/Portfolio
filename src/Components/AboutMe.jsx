@@ -14,8 +14,8 @@ export default function AboutMe() {
           attitude to every challenge.
         </p>
         <p>
-          I'm a highly motivated, self-driven person with high technical skills, fast learning with experience in Sales,
-          Business Management, and construction.
+          I'm a highly motivated, self-driven person with high technical skills, fast learning with additional
+          experience in owning a Business, Sales and Project management in Construction.
         </p>
       </div>
     </>
