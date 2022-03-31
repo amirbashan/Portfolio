@@ -51,7 +51,7 @@ export default function Skills() {
           </div>
         </div>
         <div id="skillsBack" className="otherTools SkillsInner">
-          <Heading size="sm">Other-Tools</Heading>
+          <Heading size="md">Other-Tools</Heading>
           <div className="miniSkillsContainer">
             <div className="miniSkill">
               <img src={github} alt={"github"} />
@@ -68,7 +68,7 @@ export default function Skills() {
           </div>
         </div>
         <div id="skillsTools" className="SkillsInner">
-          <Heading size="sm">Back-End</Heading>
+          <Heading size="md">Back-End</Heading>
           <div className="miniSkillsContainer">
             <div className="miniSkill">
               <img src={nodejsIcon} alt={"nodejs"} />

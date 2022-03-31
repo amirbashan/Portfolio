@@ -1,6 +1,6 @@
 #navbar {
   z-index: 10;
-  width: 100%;
+  width: 100vw;
   position: fixed;
   display: flex;
   justify-content: flex-end;
@@ -209,6 +209,7 @@
   justify-content: center;
   align-items: center;
   margin: 10px;
+  width: 85px;
 }
 .miniSkill img {
   height: 50px;
@@ -269,6 +270,14 @@ footer {
     margin-bottom: 0px;
   }
 }
+
+/* ipad mini view */
+@media only screen and (max-width: 800px) {
+  .miniSkill {
+    width: 80px;
+  }
+}
+
 /* phone view */
 @media only screen and (max-width: 500px) {
   #welcome {
@@ -304,5 +313,9 @@ footer {
   }
   .SkillsInner {
     margin-bottom: 20px;
+  }
+  .miniSkill {
+    margin: 5px;
+    /* width: 80px; */
   }
 }
