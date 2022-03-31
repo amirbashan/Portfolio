@@ -7,13 +7,13 @@ export default function Navbar() {
   return (
     <div id="navbar">
       <a target="_blank" href="">
-        <img src={resume} alt={"My Resume"} title="My Resume" className="" />
+        <img src={resume} alt={"My Resume"} title="My Resume" />
       </a>
       <a target="_blank" href="https://www.linkedin.com/in/amir-bashan-2a48a8124/">
-        <img src={linkedinIcon} alt={"linkedin link"} />
+        <img src={linkedinIcon} title="linkedin" alt={"linkedin link"} />
       </a>
       <a target="_blank" href="https://github.com/amirbashan">
-        <img src={gitIcon} alt={"github link"} className="" />
+        <img src={gitIcon} alt={"github link"} title="github"  />
       </a>
     </div>
   );
