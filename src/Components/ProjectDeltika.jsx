@@ -7,7 +7,7 @@ export default function ProjectDeltika() {
     <div className="projectFrame">
       <div data-aos="fade-right" className="projectInfo">
         <Heading size="lg" className="mb-1">
-          Deltika website
+          Deltika Product
         </Heading>
         <div className="skills">
           <button className=" btn-secondary btn-sm">React</button>
