@@ -276,6 +276,9 @@ footer {
   .miniSkill {
     width: 80px;
   }
+  .emptySpace {
+    height: 10px;
+  }
 }
 
 /* phone view */
