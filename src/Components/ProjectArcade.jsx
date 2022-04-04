@@ -14,7 +14,7 @@ export default function ProjectArcade() {
           <button className=" btn-secondary btn-sm">React-Router</button>
           <button className=" btn-secondary btn-sm">Node-js</button>
           <button className=" btn-secondary btn-sm">Express</button>
-          <button className=" btn-secondary btn-sm">SQL</button>
+          <button className=" btn-secondary btn-sm">MySQL</button>
         </div>
         <div>
           <p>
