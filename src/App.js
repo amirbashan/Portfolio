@@ -55,7 +55,7 @@ function App() {
         <div id="contact" ref={contactRef}>
           <ContactMe />
         </div>
-        <footer>Amir - 0585-009044</footer>
+        <footer>Amir 0585-009044</footer>
       </div>
     </ChakraProvider>
   );

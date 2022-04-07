@@ -17,9 +17,9 @@ export default function ProjectArcade() {
           <button className=" btn-secondary btn-sm">MySQL</button>
         </div>
         <div>
-          <p>
+          {/* <p>
             <b>Collaborator:</b> Shahar Knafo.
-          </p>
+          </p> */}
           <p>This project was done as a part of our ITC coding Bootcamp.</p>
           <p>We coded website, games logic ,created and connected to a users & scores database</p>
           <p className="note">

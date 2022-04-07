@@ -219,6 +219,8 @@
 footer {
   display: flex;
   justify-content: center;
+  background-color: #000000;
+  color: white;
 }
 
 /* tablet view */

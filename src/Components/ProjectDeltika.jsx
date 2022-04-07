@@ -17,9 +17,9 @@ export default function ProjectDeltika() {
           <button className=" btn-secondary btn-sm">PostgreSql</button>
         </div>
         <div>
-          <p>
+          {/* <p>
             <b>Collaborator:</b> Ornit Bhonkar.
-          </p>
+          </p> */}
           <p>
             Deltika uses explainable AI analytics that translates your data into proactive insights. Currently focused
             on US real estate market.

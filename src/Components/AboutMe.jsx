@@ -10,7 +10,7 @@ export default function AboutMe() {
       <div className="textContainer">
         <p>I'm a Hardworking and efficient full-stack developer who loves to code.</p>
         <p>
-          In 2021, I took a leap and trained in ITC FullStack Coding Bootcamp. I quickly absorbed new concepts with
+          In 2021, I took a leap and trained in ITC FullStack Coding Bootcamp. I quickly absorb new concepts with a
           positive attitude to every challenge.
         </p>
         <p>
