@@ -7,7 +7,7 @@ export default function ProjectArcade() {
     <div className="projectFrame">
       <div data-aos="fade-right" className="projectInfo">
         <Heading size="lg" className="mb-1">
-          Old Arcade
+          Retro Arcade
         </Heading>
         <div className="skills">
           <button className="skill btn-secondary btn-sm">React</button>
