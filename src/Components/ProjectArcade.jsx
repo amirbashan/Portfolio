@@ -10,11 +10,11 @@ export default function ProjectArcade() {
           Old Arcade
         </Heading>
         <div className="skills">
-          <button className=" btn-secondary btn-sm">React</button>
-          <button className=" btn-secondary btn-sm">React-Router</button>
-          <button className=" btn-secondary btn-sm">Node-js</button>
-          <button className=" btn-secondary btn-sm">Express</button>
-          <button className=" btn-secondary btn-sm">MySQL</button>
+          <button className="skill btn-secondary btn-sm">React</button>
+          <button className="skill btn-secondary btn-sm">React-Router</button>
+          <button className="skill btn-secondary btn-sm">Node-js</button>
+          <button className="skill btn-secondary btn-sm">Express</button>
+          <button className="skill btn-secondary btn-sm">MySQL</button>
         </div>
         <div>
           {/* <p>
@@ -32,7 +32,7 @@ export default function ProjectArcade() {
             See Live
           </a>
           <a target="_blank" href="https://github.com/amirbashan/oldArcade">
-            Sorce Code
+            Source Code
           </a>
         </div>
       </div>

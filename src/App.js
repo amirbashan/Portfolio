@@ -8,7 +8,7 @@ import AboutMe from "./Components/AboutMe";
 import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
 import ContactMe from "./Components/ContactMe";
-
+import whatsapp from "./Img/whatsapp.png";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -55,7 +55,13 @@ function App() {
         <div id="contact" ref={contactRef}>
           <ContactMe />
         </div>
-        <footer>Amir 0585-009044</footer>
+        <footer>
+          <img src={whatsapp} title="whatsapp" alt={"whatsapp link"} />
+          <a target="_blank" href="https://wa.me/0585009044">
+            Amir 0585-009044
+          </a>
+          <img src={whatsapp} title="whatsapp" alt={"whatsapp link"} />
+        </footer>
       </div>
     </ChakraProvider>
   );

@@ -10,11 +10,11 @@ export default function ProjectDeltika() {
           Deltika Product
         </Heading>
         <div className="skills">
-          <button className=" btn-secondary btn-sm">React</button>
-          <button className=" btn-secondary btn-sm">react-router</button>
-          <button className=" btn-secondary btn-sm">Mapbox</button>
-          <button className=" btn-secondary btn-sm">Python</button>
-          <button className=" btn-secondary btn-sm">PostgreSql</button>
+          <button className="skill btn-secondary btn-sm">React</button>
+          <button className="skill btn-secondary btn-sm">react-router</button>
+          <button className="skill btn-secondary btn-sm">Mapbox</button>
+          <button className="skill btn-secondary btn-sm">Python</button>
+          <button className="skill btn-secondary btn-sm">PostgreSql</button>
         </div>
         <div>
           {/* <p>

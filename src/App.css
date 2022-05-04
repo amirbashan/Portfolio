@@ -110,7 +110,7 @@
 }
 .buttonStyle a {
   display: block;
-  width: 110px;
+  width: 120px;
   margin: 0 8px 0 0 !important;
   padding: 7px 12px !important;
   color: #38b2ac !important;
@@ -175,6 +175,10 @@
   padding-top: 100px;
 }
 
+.skill:hover {
+  cursor: default;
+}
+
 .SkillsContainer {
   display: flex;
   flex-flow: row wrap;
@@ -221,6 +225,12 @@ footer {
   justify-content: center;
   background-color: #000000;
   color: white;
+  align-items: center;
+}
+
+footer img {
+  margin: 0 2px;
+  height: 20px;
 }
 
 /* tablet view */
@@ -270,6 +280,9 @@ footer {
   }
   #projects {
     margin-bottom: 0px;
+  }
+  .buttonStyle a {
+    width: 110px;
   }
 }
 
