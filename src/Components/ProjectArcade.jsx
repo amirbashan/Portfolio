@@ -27,8 +27,7 @@ export default function ProjectArcade() {
           </p>
         </div>
         <div className="buttonStyle">
-          {/* <a target="_blank" href="https://old-arcade.herokuapp.com/"> */}
-          <a target="_blank" href="javascript:void(0)">
+          <a target="_blank" href="https://retro-arcade.herokuapp.com/">
             See Live
           </a>
           <a target="_blank" href="https://github.com/amirbashan/oldArcade">
