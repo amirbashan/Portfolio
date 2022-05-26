@@ -26,14 +26,14 @@ export default function ProjectArcade() {
           <a target='_blank' href='https://retro-arcade.herokuapp.com/'>
             See Live
           </a>
-          <a target='_blank' href='https://github.com/amirbashan/oldArcade'>
+          <a target='_blank' href='https://github.com/amirbashan/RetroArcade'>
             Source Code
           </a>
         </div>
       </div>
       <div data-aos='fade-left' className='projectView'>
         <iframe
-          src='https://www.youtube.com/embed/zub5VDROQVI?rel=0&modestbranding=1&mute=1&showinfo=0&controls=0&autoplay=1&loop=1'
+          src='https://www.youtube.com/embed/zub5VDROQVI?rel=0&mute=1&showinfo=0&autoplay=1&loop=1'
           width='100%'
           height='315'
           frameborder='0'
