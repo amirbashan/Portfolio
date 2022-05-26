@@ -125,7 +125,7 @@ body > * {
   color: #ffffff !important;
   background-color: #38b2ac !important;
 }
-.projectImg {
+.projectView {
   margin-top: 10px;
   border: 1px solid rgb(196, 196, 196);
   width: 55%;
@@ -256,7 +256,7 @@ footer img {
   .projectInfo {
     width: 100%;
   }
-  .projectImg {
+  .projectView {
     margin-top: 20px;
     width: 100%;
   }
