@@ -36,10 +36,9 @@ export default function ProjectArcade() {
       </div>
       <div data-aos="fade-left" className="projectView">
         <iframe
-          src="https://www.youtube.com/embed/zub5VDROQVI?rel=0&mute=1&showinfo=0&autoplay=1&loop=1"
+          src="https://www.youtube.com/embed/zub5VDROQVI?rel=0&mute=1&showinfo=0&loop=1"
           width="100%"
           height="315"
-          frameBorder="0"
           allowFullScreen
         ></iframe>
       </div>

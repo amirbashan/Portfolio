@@ -36,8 +36,7 @@ export default function ProjectDeltika() {
         <iframe
           width="100%"
           height="315"
-          src="https://www.youtube.com/embed/cXqHgyv9TFc?rel=0&mute=1&showinfo=0&autoplay=1&loop=1"
-          frameBorder="0"
+          src="https://www.youtube.com/embed/cXqHgyv9TFc?rel=0&mute=1&showinfo=0&loop=1"
           allowFullScreen
         ></iframe>
       </div>
