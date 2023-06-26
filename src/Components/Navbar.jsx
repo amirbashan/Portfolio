@@ -8,7 +8,7 @@ export default function Navbar() {
     <div id="navbar">
       <a
         target="_blank"
-        href="https://drive.google.com/file/d/1ixxJBlCQJKo3z34rxlIEwH34bbFEIqD9/view?usp=sharing"
+        href="https://drive.google.com/file/d/1KBsBs-KXHgzrk_CLFYqlb8lJ-oecvORB/view?usp=sharing"
       >
         <img src={resume} alt={'My Resume'} title="My Resume" />
       </a>
