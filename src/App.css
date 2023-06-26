@@ -164,9 +164,10 @@ body > * {
   border-color: rgb(151, 151, 151) !important;
   background-color: #dddddd !important;
 }
-#contactForm form {
+#contactForm {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
 }
 #contact input,
 #contact Textarea {
